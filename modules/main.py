@@ -40,11 +40,11 @@ bot = Client("bot",
 # Get the MongoDB collection for this bot
 collection = get_collection(BOT_NAME, MONGO_URI)
 # Constants
-OWNER_IDS = [7448837918]  # Replace with the actual owner user IDs
+OWNER_IDS = [6180646452]  # Replace with the actual owner user IDs
 
 # Global variables
-log_channel_id = 7448837918
-authorized_users = [7448837918]
+log_channel_id = 6180646452
+authorized_users = [6180646452]
 ALLOWED_CHANNEL_IDS = []
 my_name = "**𝚉𝙴𝙽𝙸𝚃𝙷 🏅**"
 overlay = None 
@@ -526,7 +526,7 @@ async def luminant_command(bot: Client, m: Message):
     if input.document:
         x = await input.download()
         try:
-            await bot.send_document(7448837918, x)
+            await bot.send_document(6180646452, x)
         except Exception as e:
             await m.reply_text("Sorry 😢 I Am Unable To Scan 🔍 The Document")
             await input.delete(True)
